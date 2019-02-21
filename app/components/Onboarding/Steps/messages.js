@@ -71,6 +71,8 @@ export default defineMessages({
   connection_type_btcpayserver_label: 'BTCPay Server',
   connection_type_btcpayserver_description:
     'Connect to your own BTCPay Server instance to access your BTCPay Server wallet.',
+  connection_type_mainnet_label: 'Create mainnet wallet',
+  connection_type_mainnet_description: 'Let Zap create a mainnet node and lighting node for you',
   signup_description: 'Would you like to create a new wallet or import an existing one?',
   signup_import: 'Import existing wallet',
   signup_title: "Alright, let's get set up",

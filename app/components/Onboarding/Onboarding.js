@@ -235,6 +235,25 @@ class Onboarding extends React.Component {
           />
         ]
         break
+
+      /**
+       * Form steps for mainnet flow.
+       */
+      case 'mainnet':
+        formSteps = [
+          ...formSteps,
+          <Wizard.Step
+            key="SeedView"
+            component={SeedView}
+            {...{ seed, fetchSeed, fetchingSeed }}
+          />,
+          <Wizard.Step key="SeedConfirm" component={SeedConfirm} {...{ seed }} />,
+          <Wizard.Step key="Password" component={Password} {...{ setPassword }} />,
+          <Wizard.Step key="Name" component={Name} {...{ name, setName }} />,
+          <Wizard.Step key="Autopilot" component={Autopilot} {...{ autopilot, setAutopilot }} />,
+          <Wizard.Step key="WalletCreate" component={WalletCreate} {...{ createNewWallet }} />
+        ]
+        break
     }
 
     const steps = [

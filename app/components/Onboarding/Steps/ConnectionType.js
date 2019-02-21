@@ -123,6 +123,13 @@ class ConnectionType extends React.Component {
               }
               mb={4}
             />
+
+            <Radio
+              value="mainnet"
+              label={<FormattedMessage {...messages.connection_type_mainnet_label} />}
+              description={<FormattedMessage {...messages.connection_type_mainnet_description} />}
+              mb={4}
+            />
           </RadioGroup>
         </Form>
       </>
